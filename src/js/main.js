@@ -2,7 +2,7 @@ import { processHeroDecks } from "./process_heroes.js";
 import { createHeroSelector } from "./hero_selector.js";
 import { checkAllPacks, disableRadios, getJSON, getSelectedRadioButtonValue, getSelectedPackIds, hamburger, loadHeaderFooter, showPacks, uncheckAllPacks } from "./utils.js";
 
-const heroNamesData = await getJSON("/json/hero_names.json");
+const heroNamesData = await getJSON("/src/json/hero_names.json");
 
 loadHeaderFooter().then(header => {
   hamburger(header);
